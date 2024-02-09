@@ -1,0 +1,6 @@
+#+TITLE: Mastodon Wordcloud
+
+This is a script to create wordclouds from your Mastodon statuses. It goes through and scrapes the entire history of a Mastodon profile and creates a wordcloud.
+
+#+CAPTION: Example from https://fosstodon.org/@BigEatie
+[[./bigeatie2.png]]
