@@ -1,0 +1,4 @@
+*.png
+!pngwing.com.png
+*.svg
+params
