@@ -37,3 +37,6 @@ There are some additional optional parameters you can pass.
 
 + You can pass a stopwords file through the =--stopwords= parameter. The file shoud contain a list of words to exclude from the wordcloud, one word per line. A default file =stopwords.txt= is included.
 + You can pass an image to define the shape of your word cloud through the =--mask_img= parameter. A default image of the [[https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/The_GNU_logo.png/614px-The_GNU_logo.png?20051020214817][gnu logo]] is included.
++ By default a contour of your masking image is drawn. You can pass the =--contour_width= parameter to change how thick it is. Its default value is 2.
++ The color of the masking image contour can be controlled by the =--contour_color= parameter. This needs to be a [[https://matplotlib.org/stable/gallery/color/named_colors.html][color recognized by matplotlib]] or an rgb value with the format =#rrggbb=.
++ The =--output= parameter allows you to control the name of the generated wordcloud file. It defaults to =wc.png=.

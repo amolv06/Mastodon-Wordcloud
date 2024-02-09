@@ -31,18 +31,20 @@ def wc_args():
     parser.add_argument("account_name", help="The account name: i.e. bigeatie")
     parser.add_argument("access_token", help="The access token. Get this from "
                                              "your home instance")
-    parser.add_argument("--stopwords", help="File containing a stopword per "
+    parser.add_argument("--stopwords", help="File containing one stopword per "
                                              "line", default="stopwords.txt")
-    parser.add_argument("--mask_img", help="Masking image for word cloud.",
+    parser.add_argument("--mask_img", help="Masking image for word cloud. "
+                                           "Defines the shape of the wordcloud",
                         default="pngwing.com.png")
     parser.add_argument("--output", help="Filename of the generated wordcloud",
                         default="wc.png")
-    parser.add_argument("--contour_color", help="Color of the contour. Must be "
-                                                "a matplotlib color name or hex "
-                                                "value i.e. #rrggbb",
+    parser.add_argument("--contour_color", help="Color of the masking image "
+                                                "contour. Must be a matplotlib "
+                                                "color name or hex value i.e. "
+                                                "#rrggbb",
                         default="gold")
     parser.add_argument("--contour_width", help="Width of the contour of the "
-                                                "mask",
+                                                "masking image",
                         default=2, type=int)
 #    parser.add_argument("--config", help="File you can save above parameters "
 #                                         "to, with one parameter per line in "
