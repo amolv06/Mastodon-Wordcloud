@@ -6,3 +6,13 @@ The following is an example from [[https://fosstodon.org/@BigEatie][my Mastodon 
 [[./bigeatie2.png]]
 
 * Prerequisites
+
+The following python packages are prerequisites to running this script
+
++ beautifulsoup4==4.12.3
++ matplotlib==3.8.2
++ numpy==1.26.4
++ Pillow==10.2.0
++ Requests==2.31.0
++ tqdm==4.66.1
++ wordcloud==1.9.3
