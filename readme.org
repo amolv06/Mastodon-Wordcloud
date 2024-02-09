@@ -16,3 +16,19 @@ The following python packages are prerequisites to running this script
 + Requests==2.31.0
 + tqdm==4.66.1
 + wordcloud==1.9.3
+
+Needless to say you also need Python installed. I've tested this using version 3.11.6, but I imagine it should work with versions older than that.
+
+* Installing and running the script
+
+To run this script clone it into a local directory and =cd= into it. You will need an api key to the server you intend on querying through this script. Then run the following command:
+
+#+BEGIN_EXAMPLE:
+python cloud.py [server url] [account name] [api key]
+#+END_EXAMPLE
+
+So to create a wordcloud for my own account I would invoke the script like
+
+#+BEGIN_EXAMPLE:
+python cloud.py https://fosstodon.org/ bigeatie [api key]
+#+END_EXAMPLE
